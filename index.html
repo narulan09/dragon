@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		.txt-align {
+			text-align: center;
+			font-family: arial black;
+		}
+		.box1 {
+		height: 700px;
+		width: 1500px
+		}
+		.hw {
+			height: 225px;
+			width: 225px;
+		}
+		.witch {
+			top: 100px;
+			left: 100px;
+
+		}
+		.dragon {
+			
+		}
+		.blacksmith {
+
+		}
+		.knight {
+			
+		}
+		.goblin {
+			
+		}
+		.elf{
+			
+		}
+		.div1 {
+			height: 460px;
+			width: 775px;
+			background: black;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.div2 {
+			height: 230px;
+			width: 775px;
+			background: white;
+			display: flex;
+		}
+		.div3 {
+			height: 230px;
+			width: 775px;
+			background: white;
+			display: flex;
+		}
+		.div4 {
+			height: 225px;
+			width: 225px;
+			background: blue;
+			transition: 1s;
+		}
+			.div5 {
+			height: 225px;
+			width: 225px;
+			background: black;
+			margin-left: 50px;
+			transition: 1s;
+		}
+		.div6 {
+			height: 225px;
+			width: 225px;
+			background: darkred;
+			margin-left: 50px;
+			transition: 1s;
+		}
+		.div7 {
+			height: 225px;
+			width: 225px;
+			background: black;
+			margin-top: 5px;
+			transition: 1s;
+		}
+		.div8 {
+			height: 225px;
+			width: 225px;
+			background: darkred;
+			margin-left: 50px;
+			margin-top: 5px;
+			transition: 1s;
+
+		}
+		.div9 {
+			height: 225px;
+			width: 225px;
+			background: green;
+			margin-left: 50px;
+			margin-top: 5px;
+			transition: 1s;
+		}
+		.btn {
+
+		}
+	</style>
+
+	<div class="box1" style="background-image: url(for.jpg);background-size: 100%100%;">
+		<h1 class="txt-align">you have an <span class="text"> 3 </span> attemps</h1>
+		<button class="txt-align btn" style="margin-left: 670px;height: 30px;width: 100px;">rotate</button>
+		<h2 class="txt-align">where is hidden dragon</h2>
+	<div class="div1">
+<div class="div2">
+	<div class="div4 hw witch" style="background-image:url(witch.jpg);background-size: 100%100%";></div>
+	<div class="div5 hw" style="background-image:url(dar1.webp);background-size: 100%100%"></div>
+	<div class="div6 hw" style="background-image:url(bsgif.gif);background-size: 100%100%"></div>
+</div>
+<div class="div3">
+	<div class="div7 hw" style="background-image:url(khight.jpg);background-size: 100%100%"></div>
+	<div class="div8 hw" style="background-image:url(goblin.webp);background-size: 100%100%"></div>
+	<div class="div9 hw" style="background-image:url(elf.webp);background-size: 100%100%"></div>
+</div>
+	</div>		
+</head>
+<body>
+
+<script type="text/javascript">
+	let attemps = 3
+			document.querySelector('.btn').onclick = function() {
+						document.querySelector('.div4').style.marginLeft ="275px"
+								document.querySelector('.div4').style.marginTop ="235px"
+								document.querySelector ('.div4').style.background="black"
+						document.querySelector('.div5').style.marginLeft ="50px"
+								document.querySelector('.div5').style.marginTop ="235px"
+						document.querySelector('.div6').style.marginLeft ="-775px"
+								document.querySelector('.div6').style.marginTop ="235px"
+						document.querySelector('.div7').style.marginLeft ="550px"
+								document.querySelector('.div7').style.marginTop ="-230px"
+						document.querySelector('.div8').style.marginLeft ="-500px"
+								document.querySelector('.div8').style.marginTop ="-230px"
+						document.querySelector('.div9').style.marginLeft ="-500px"
+								document.querySelector('.div9').style.marginTop ="-230px"
+				
+				document.querySelector ('.div5').style.background="black"
+				document.querySelector ('.div6').style.background="black"
+				document.querySelector ('.div7').style.background="black"
+				document.querySelector ('.div8').style.background="black"
+				document.querySelector ('.div9').style.background="black"
+		}
+						document.querySelector('.div4').onclick = function() {
+attemps = attemps - 1
+document.querySelector('.text').innerHTML = attemps
+				}
+										document.querySelector('.div6').onclick = function() {
+attemps = attemps - 1
+document.querySelector('.text').innerHTML = attemps
+				}
+										document.querySelector('.div7').onclick = function() {
+attemps = attemps - 1
+document.querySelector('.text').innerHTML = attemps
+				}
+										document.querySelector('.div8').onclick = function() {
+attemps = attemps - 1
+document.querySelector('.text').innerHTML = attemps
+				}
+										document.querySelector('.div9').onclick = function() {
+attemps = attemps - 1
+document.querySelector('.text').innerHTML = attemps
+			 if (attemps ==0 ){
+ 	alert("ты проиграл")
+ }	}
+document.querySelector('.div5').onclick = function() {
+	alert("ты победил🥳")
+}
+
+</script>
+
+</body>
+</html> 
